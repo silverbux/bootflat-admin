@@ -38,7 +38,11 @@ Root Folder
 |   └── site.min.js     # Combined/Minified file of javascript files
 └── fonts           	# Font-Awsome and Glyphicons font folder
 ```
+# MORE INFO
 
+## Installing Ruby and Sass
+* https://www.ruby-lang.org/en/installation/ *(for windows user dont forget to check "Add Ruby executables to your PATH" option)*
+* After installing Ruby execute `gem install sass` to install SASS
 
 ## LICENSE
 
