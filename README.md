@@ -1,6 +1,7 @@
 
 # What is Bootflat-Admin?
 BOOTFLAT-ADMIN is an open source Flat UI KIT specialized for admin template, based on BOOTFLAT and Bootstrap 3.2.0 CSS framework.
+
 # Preview
 ![Bootflat-Admin](https://raw.githubusercontent.com/silverbux/bootflat-admin/master/img/screensho1.png "Bootflat-Admin")
 
@@ -15,14 +16,13 @@ For the designers, BOOTFLAT offer a [free PSD](https://github.com/bootflat/Bootf
 * Run Grunt Watch: `grunt watch`
 
 #Customize / Modify / Workflow
-
-`grunt watch` will monitor any changes to sass, css and js files and automatically combine, minify and clean all files to **site.min.css** and **site.min.js** 
+`grunt watch` will monitor any changes to sass, css and js files and automatically combine, minify and clean all files to **site.min.css** and **site.min.js**
 
 ###CSS
-add your own css rules under **/css/site.css**
+Add your own css rules under **/css/site.css**
 
 ###SASS FILES
-You can also modifying SASS files under folder **/bootflat-admin/scss** folder.
+You can also modify SASS files under folder **/bootflat-admin/scss** folder.
 
 ###JS FILES
 Add your javascript codes to **/js/application.js**.
@@ -44,9 +44,8 @@ Root Folder
 * https://www.ruby-lang.org/en/installation/ *(for windows user dont forget to check "Add Ruby executables to your PATH" option)*
 * After installing Ruby execute `gem install sass` to install SASS
 
-## LICENSE
-
-Bootflat-Admin is licensed under the MIT Open Source license. For more information, please see the LICENSE file in this repository.
-
 ## CREDITS
 Bootflat-Admin is simply a modified copy of Bootflat with extra magic stuff in it. All necessary credits are given to [Bootflat](http://bootflat.github.io/) authors.
+
+## LICENSE
+Bootflat-Admin is licensed under the MIT Open Source license. For more information, please see the LICENSE file in this repository.
