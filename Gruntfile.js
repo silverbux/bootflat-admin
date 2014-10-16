@@ -8,11 +8,12 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-
     meta: {
-      defaultPath: 'bootflat-admin'
+      defaultPath: 'bootflat-admin',
+      distPath:'dist',
+      jsCombPath: grunt.file.readJSON('bootflat-admin/jscomb.json'),
+      cssCombPath: grunt.file.readJSON('bootflat-admin/csscomb.json')
     },
-
     banner: '/*\n * <%= pkg.name %> <%= pkg.version %>\n' +
 		    ' *\n' +
 		    ' * Description: <%= pkg.description %>\n' +
@@ -27,9 +28,8 @@ module.exports = function(grunt) {
 		    ' *\n' +
 		    ' *\n' +
 		    ' */\n',
-
     clean: {
-      dist: ['<%= meta.defaultPath %>/css/']
+      dist: ['<%= meta.defaultPath %>/dist/css/']
     },
     uglify: {
       options: {
@@ -39,14 +39,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'js/site.min.js': [
-            'js/jquery-1.10.1.min.js',
-            'js/bootstrap.min.js',
-            '<%= meta.defaultPath %>/js/icheck.min.js',
-            '<%= meta.defaultPath %>/js/jquery.fs.stepper.min.js',
-            '<%= meta.defaultPath %>/js/jquery.fs.selecter.min.js',
-            'js/application.js'
-          ]
+          '<%= meta.distPath %>/js/site.min.js': '<%= meta.jsCombPath %>'
         }
       }
     },
@@ -67,19 +60,14 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'css/site.min.css': [
-            'css/bootstrap.min.css',
-            '<%= meta.defaultPath %>/css/<%= pkg.name %>.css',
-            'css/site.css'
-          ],
-          '<%= meta.defaultPath %>/css/<%= pkg.name %>.min.css': '<%= meta.defaultPath %>/css/<%= pkg.name %>.css'
+          '<%= meta.distPath %>/css/site.min.css': '<%= meta.cssCombPath %>'
         }
       }
     },
     sass: {
       dist: {
         files: {
-          '<%= meta.defaultPath %>/css/<%= pkg.name %>.css': '<%= meta.defaultPath %>/scss/<%= pkg.name %>.scss'
+          '<%= meta.defaultPath %>/tmp/<%= pkg.name %>.css': '<%= meta.defaultPath %>/scss/<%= pkg.name %>.scss'
         },
         options: {
           banner: '<%= banner %>',
@@ -125,7 +113,7 @@ module.exports = function(grunt) {
     },
     watch: {
       css: {
-        files: 'css/site.css',
+        files: '<%= meta.defaultPath %>/css/**',
         tasks: ['task-css'],
         options: {
           livereload: true,
@@ -139,7 +127,7 @@ module.exports = function(grunt) {
         },
       },
       js: {
-        files: 'js/application.js',
+        files: '<%= meta.defaultPath %>/js/**',
         tasks: ['task-js'],
         options: {
           livereload: true,
@@ -150,8 +138,8 @@ module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt);
   require('time-grunt')(grunt);
-  grunt.loadNpmTasks('grunt-contrib-watch');
 
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.registerTask('task-css', ['sass', 'csscomb', 'cssmin']);
   grunt.registerTask('task-js', ['uglify']);
   grunt.registerTask('task', ['clean', 'task-css', 'task-js']);

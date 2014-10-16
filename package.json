@@ -1,10 +1,10 @@
 {
   "name": "bootflat-admin",
   "private": false,
-  "version": "2.0.4",
-  "description": "BOOTFLAT-ADMIN is an open source Flat UI KIT based on  BOOTFLAT and Bootstrap 3.2.0 CSS framework. It provides a faster, easier and less repetitive way for web developers to create elegant web apps.",
+  "version": "0.0.3",
+  "description": "BOOTFLAT-ADMIN is a free open source Admin Template with Flat UI based on Bootstrap 3.2.0 and BOOTFLAT, Plus flying dragons and rainbow unicorns",
   "author": "Alex Quiambao <alexquiambao@gmail.com>",
-  "homepage": "http://bootflat.github.com/",
+  "homepage": "https://github.com/silverbux/bootflat-admin",
   "keywords": [
     "admin template",
     "mobile",

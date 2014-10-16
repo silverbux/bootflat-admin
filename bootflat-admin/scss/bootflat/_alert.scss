@@ -50,10 +50,10 @@ $alert-link-color:              $mediumgray-light !default;
       @at-root & &-link {
           cursor: pointer;
           text-decoration: underline;
-          @include opacity($opacity: 65, $filter: true); 
+          @include opacity($opacity: 65, $filter: true);
           &:hover,
           &:focus {
-              @include opacity($opacity: 45, $filter: true);            
+              @include opacity($opacity: 45, $filter: true);
           }
       }
 
@@ -66,7 +66,7 @@ $alert-link-color:              $mediumgray-light !default;
       @at-root & .btn-link:focus,
       & .btn-link:hover {
           text-decoration: none;
-          @include opacity($opacity: 40, $filter: true);        
+          @include opacity($opacity: 40, $filter: true);
       }
   }
 
