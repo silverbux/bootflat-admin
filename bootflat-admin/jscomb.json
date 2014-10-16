@@ -1,0 +1,8 @@
+[
+    "bootflat-admin/js/jquery-1.10.1.min.js",
+    "bootflat-admin/js/bootstrap.min.js",
+    "bootflat-admin/js/icheck.min.js",
+    "bootflat-admin/js/jquery.fs.stepper.min.js",
+    "bootflat-admin/js/jquery.fs.selecter.min.js",
+    "bootflat-admin/js/application.js"
+]

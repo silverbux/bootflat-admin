@@ -1,0 +1,5 @@
+[
+    "bootflat-admin/css/bootstrap.min.css",
+    "bootflat-admin/tmp/<%= pkg.name %>.css",
+    "bootflat-admin/css/site.css"
+]
