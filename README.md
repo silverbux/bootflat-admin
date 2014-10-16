@@ -16,27 +16,37 @@ For the designers, BOOTFLAT offer a [free PSD](https://github.com/bootflat/Bootf
 * Run Grunt Watch: `grunt watch`
 
 #Customize / Modify / Workflow
-`grunt watch` will monitor any changes to sass, css and js files and automatically combine, minify and clean all files to **site.min.css** and **site.min.js**
+`grunt watch` will monitor any changes to sass, css and js files and automatically combine, minify and clean all files to **dist/css/site.min.css** and **dist/js/site.min.js**
+
+###CSS and JS Settings
+Add or Remove css/js sources or packages from **bootflat-admin/csscomb.json** and **bootflat-admin/jscomb.json**
 
 ###CSS
-Add your own css rules under **/css/site.css**
+Add your css rules under **bootflat-admin/css/site.css**
 
 ###SASS FILES
 You can also modify SASS files under folder **/bootflat-admin/scss** folder.
 
 ###JS FILES
-Add your javascript codes to **/js/application.js**.
+Add your javascript codes under **bootflat-admin/js/application.js**.
 
-#Compiled Files
-Here are the following files/folders you will need for your application/website
+#Folder Structure
 
 ```bash
 Root Folder
-├── css
-|   └── site.min.css    # Combined/Minified file of css and sass files
-├── js
-|   └── site.min.js     # Combined/Minified file of javascript files
-└── fonts           	# Font-Awsome and Glyphicons font folder
+├──bootflat-admin
+│  ├── csscomb.json  # json file containing all css files to combine
+│  ├── jscomb.json   # json file containing all js files to combine
+│  ├── css           # source files for css
+│  ├── js            # source files for js
+│  ├── sass          # sass files
+│  └── tmp           # temp folder for csscomb
+│
+│──dist              # the only folder you need for your app/website/template
+│  ├── css
+│  ├── fonts
+│  ├── js
+└──└── img
 ```
 # MORE INFO
 

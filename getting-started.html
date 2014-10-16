@@ -123,31 +123,41 @@
                 </div>
                 <div class="docs-article docs--start" id="Install">
                   <h3>Customize / Modify / Workflow</h3>
-                  <div class="alert alert-success col-md-9">
+                  <div class="alert alert-success col-md-10">
                     <code>grunt watch</code> will monitor any changes to sass, css and js files and automatically combine, minify and clean all files to
-                    <b>site.min.css</b> and <b>site.min.js</b>
+                    <b>dist/css/site.min.css</b> and <b>dist/js/site.min.js</b>
                     <br class="clearfix">
                   </div>
                   <div class="clearfix"></div>
-                  <h4>CSS</h4>
-                  <p>add your own css rules under <b>/css/site.css</b></p>
+                  <h4>CSS and JS Settings</h4>
+                  <p>Add or Remove css/js sources or packages from <b>bootflat-admin/csscomb.json</b> and <b>bootflat-admin/jscomb.json</b></p>
+                  <h4>CSS FILES</h4>
+                  <p>Add your own css rules under <b>bootflat-admin/css/site.css</b></p>
                   <h4>SASS FILES</h4>
-                  <p>You can also modifying SASS files under folder <b>/bootflat-admin/scss folder.</b></p>
+                  <p>You can also modify SASS files under folder <b>bootflat-admin/scss folder.</b></p>
 
                   <h4>JS FILES</h4>
-                  <p>Add your javascript codes to <b>/js/application.js.</b></p>
+                  <p>Add your javascript codes to <b>bootflat-admin/js/application.js.</b></p>
                 </div>
                 <!-- What's included
                 ================================================== -->
                 <div class="docs-article docs--start" id="included">
-                  <h3>Compiled Files</h3>
-                  <p>Here are the following files/folders you will need for your application/website</p>
-<pre><code class="bash">/
-├── css/
-│   ├── site.min.css
-├── js/
-│   ├── site.min.js
-└── fonts
+                  <h3>Folder Structure</h3>
+<pre><code class="bash">
+Root Folder
+├──bootflat-admin
+│  ├── csscomb.json  # json file containing all css files to combine
+│  ├── jscomb.json   # json file containing all js files to combine
+│  ├── css           # source files for css
+│  ├── js            # source files for js
+│  ├── sass          # sass files
+│  └── tmp           # temp folder for csscomb
+│
+│──dist              # the only folder you need for your app/website/template
+│  ├── css
+│  ├── fonts
+│  ├── js
+└──└── img
 </code></pre>
                 </div>
                 <!-- CSS/SASS

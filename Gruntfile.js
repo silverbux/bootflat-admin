@@ -45,7 +45,7 @@ module.exports = function(grunt) {
     },
     csscomb: {
       options: {
-        config: '<%= meta.defaultPath %>/scss/.csscomb.json'
+        config: '<%= meta.defaultPath %>/sass/.csscomb.json'
       },
       dist: {
         files: {
@@ -67,7 +67,7 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          '<%= meta.defaultPath %>/tmp/<%= pkg.name %>.css': '<%= meta.defaultPath %>/scss/<%= pkg.name %>.scss'
+          '<%= meta.defaultPath %>/tmp/<%= pkg.name %>.css': '<%= meta.defaultPath %>/sass/<%= pkg.name %>.scss'
         },
         options: {
           banner: '<%= banner %>',
@@ -78,10 +78,10 @@ module.exports = function(grunt) {
     },
     csslint: {
       options: {
-        csslintrc: '<%= meta.defaultPath %>/scss/.csslintrc'
+        csslintrc: '<%= meta.defaultPath %>/sass/.csslintrc'
       },
       src: [
-          '<%= meta.defaultPath %>/css/<%= pkg.name %>.css'
+          '<%= meta.defaultPath %>/css/site.css'
       ]
     },
     validation: {
@@ -119,8 +119,8 @@ module.exports = function(grunt) {
           livereload: true,
         },
       },
-      scss: {
-        files: '<%= meta.defaultPath %>/scss/**/**',
+      sass: {
+        files: '<%= meta.defaultPath %>/sass/**/**',
         tasks: ['task-css'],
         options: {
           livereload: true,
