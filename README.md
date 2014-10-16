@@ -3,9 +3,9 @@
 BOOTFLAT-ADMIN is an open source Flat UI KIT specialized for admin template, based on BOOTFLAT and Bootstrap 3.2.0 CSS framework.
 
 # Preview
-![Bootflat-Admin](https://raw.githubusercontent.com/silverbux/bootflat-admin/master/img/screensho1.png "Bootflat-Admin")
+![Bootflat-Admin](https://raw.githubusercontent.com/silverbux/bootflat-admin/master/dist/img/screensho1.png "Bootflat-Admin")
 
-![Bootflat-Admin](https://raw.githubusercontent.com/silverbux/bootflat-admin/master/img/screenshot2.png "Bootflat-Admin")
+![Bootflat-Admin](https://raw.githubusercontent.com/silverbux/bootflat-admin/master/dist/img/screenshot2.png "Bootflat-Admin")
 
 For the designers, BOOTFLAT offer a [free PSD](https://github.com/bootflat/Bootflat.UI.Kit.PSD) file for you, it including a set of beautiful and pure components, which you can use to create startup projects, websites or iOS/Android Apps.
 
