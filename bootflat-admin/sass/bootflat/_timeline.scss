@@ -82,7 +82,7 @@ $timeline-radius:                         4px !default;
 				  margin-top: 31px;
 				  padding: 10px 10px 0;
 				  @include radius($type: border-radius, $value: $timeline-radius);
-				  background-color: $white;
+				  background-color: $lightgray-dark;
 				  width: 47%;
 
 				  &:before {
@@ -121,7 +121,7 @@ $timeline-radius:                         4px !default;
 
 					&:before {
 						left: -12px;
-						border-color: transparent $white transparent transparent;
+						border-color: transparent $lightgray-dark transparent transparent;
 					}
 				}
 			  }
@@ -134,7 +134,7 @@ $timeline-radius:                         4px !default;
 					float: left;
 					&:before {
 						right: -12px;
-						border-color: transparent transparent transparent $white;
+						border-color: transparent transparent transparent $lightgray-dark;
 					}
 				}
 			  }
@@ -167,7 +167,7 @@ $timeline-radius:                         4px !default;
 						width: 84%;
 						&:before {
 							left: -12px;
-							border-color: transparent $white transparent transparent;
+							border-color: transparent $lightgray-dark transparent transparent;
 						}
 					}
 				}
