@@ -3,12 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Bootflat-Admin Template</title>
-    <!-- Sets initial viewport load and disables zooming  -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!-- SmartAddon.com Verification -->
-    <meta name="smartaddon-verification" content="936e8d43184bc47ef34e25e426c508fe" />
-  <meta name="keywords" content="Flat UI Design, UI design, UI, user interface, web interface design, user interface design, Flat web design, Bootstrap, Bootflat, Flat UI colors, colors">
-  <meta name="description" content="The complete style of the Bootflat Framework.">
     <link rel="shortcut icon" href="favicon_16.ico"/>
     <link rel="bookmark" href="favicon_16.ico"/>
     <!-- site css -->
@@ -62,87 +57,93 @@
     <!--header-->
     <div class="container-fluid">
     <!--documents-->
-        <div class="col-md-2 sidebar">
-            <ul class="list-group panel" id="sidebarmenu">
-              <li class="list-group-item"><a href="" class="toggle-side-panel"><i class="glyphicon glyphicon-align-justify"></i> <b>SIDE PANEL</b></a></li>
-              <li class="list-group-item"><input type="text" class="form-control search-query" placeholder="Search Something"></li>
-              <li class="list-group-item"><a href="index.html"><i class="glyphicon glyphicon-home"></i>Dashboard </a></li>
-              <li class="list-group-item"><a href="icons.html"><i class="glyphicon glyphicon-certificate"></i>Icons </a></li>
-              <li class="list-group-item"><a href="list.html"><i class="glyphicon glyphicon-th-list"></i>Tables and List </a></li>
-              <li class="list-group-item"><a href="forms.html" data-parent="#sidebarmenu"><i class="glyphicon glyphicon-list-alt"></i>Forms</a></li>
-              <li class="list-group-item"><a href="alerts.html" data-parent="#sidebarmenu"><i class="glyphicon glyphicon-bell"></i>Alerts</li>
-              <li class="list-group-item"><a href="timeline.html"  data-parent="#sidebarmenu"><i class="glyphicon glyphicon-indent-left"></i>Timeline</a></li>
-              <li class="list-group-item"><a href="calendars.html"  data-parent="#sidebarmenu"><i class="glyphicon glyphicon-calendar"></i>Calendars</a></li>
-              <li class="list-group-item"><a href="typography.html"  data-parent="#sidebarmenu"><i class="glyphicon glyphicon-font"></i>Typography</a></li>
-              <li class="list-group-item"><a href="footers.html"  data-parent="#sidebarmenu"><i class="glyphicon glyphicon-minus"></i>Footers</a></li>
-              <li class="list-group-item"><a href="panels.html"  data-parent="#sidebarmenu"><i class="glyphicon glyphicon-list-alt"></i>Panels</a></li>
-              <li class="list-group-item"><a href="navs.html"  data-parent="#sidebarmenu"><i class="glyphicon glyphicon-th-list"></i>Navs</a></li>
-              <li class="list-group-item"><a href="colors.html"  data-parent="#sidebarmenu"><i class="glyphicon glyphicon-tint"></i>Colors</a></li>
-              <li class="list-group-item"><a href="flex.html"  data-parent="#sidebarmenu"><i class="glyphicon glyphicon-th"></i>Flex</a></li>
-              <li>
-                <a href="#demo3" class="list-group-item " data-toggle="collapse" data-parent="#sidebarmenu">Item 3  <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <div class="collapse" id="demo3">
-                  <a href="#SubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Subitem 1  <span class="glyphicon glyphicon-chevron-right"></span></a>
-                  <div class="collapse list-group-submenu" id="SubMenu1">
-                    <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 1 a</a>
-                    <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 2 b</a>
-                    <a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubSubMenu1">Subitem 3 c <span class="glyphicon glyphicon-chevron-right"></span></a>
-                    <div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">
-                      <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 1</a>
-                      <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 2</a>
+        <div class="row row-offcanvas row-offcanvas-left">
+          <div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation">
+            <ul class="list-group panel">
+                <li class="list-group-item"><i class="glyphicon glyphicon-align-justify"></i> <b>SIDE PANEL</b></li>
+                <li class="list-group-item"><input type="text" class="form-control search-query" placeholder="Search Something"></li>
+                <li class="list-group-item"><a href="index.html"><i class="glyphicon glyphicon-home"></i>Dashboard </a></li>
+                <li class="list-group-item"><a href="icons.html"><i class="glyphicon glyphicon-certificate"></i>Icons </a></li>
+                <li class="list-group-item"><a href="list.html"><i class="glyphicon glyphicon-th-list"></i>Tables and List </a></li>
+                <li class="list-group-item"><a href="forms.html"><i class="glyphicon glyphicon-list-alt"></i>Forms</a></li>
+                <li class="list-group-item"><a href="alerts.html"><i class="glyphicon glyphicon-bell"></i>Alerts</li>
+                <li class="list-group-item"><a href="timeline.html" ><i class="glyphicon glyphicon-indent-left"></i>Timeline</a></li>
+                <li class="list-group-item"><a href="calendars.html" ><i class="glyphicon glyphicon-calendar"></i>Calendars</a></li>
+                <li class="list-group-item"><a href="typography.html" ><i class="glyphicon glyphicon-font"></i>Typography</a></li>
+                <li class="list-group-item"><a href="footers.html" ><i class="glyphicon glyphicon-minus"></i>Footers</a></li>
+                <li class="list-group-item"><a href="panels.html" ><i class="glyphicon glyphicon-list-alt"></i>Panels</a></li>
+                <li class="list-group-item"><a href="navs.html" ><i class="glyphicon glyphicon-th-list"></i>Navs</a></li>
+                <li class="list-group-item"><a href="colors.html" ><i class="glyphicon glyphicon-tint"></i>Colors</a></li>
+                <li class="list-group-item"><a href="flex.html" ><i class="glyphicon glyphicon-th"></i>Flex</a></li>
+                <li class="list-group-item"><a href="login.html" ><i class="glyphicon glyphicon-lock"></i>Login</a></li>
+                <li>
+                  <a href="#demo3" class="list-group-item " data-toggle="collapse">Item 3  <span class="glyphicon glyphicon-chevron-right"></span></a>
+                  <div class="collapse" id="demo3">
+                    <a href="#SubMenu1" class="list-group-item" data-toggle="collapse">Subitem 1  <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <div class="collapse list-group-submenu" id="SubMenu1">
+                      <a href="#" class="list-group-item">Subitem 1 a</a>
+                      <a href="#" class="list-group-item">Subitem 2 b</a>
+                      <a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse">Subitem 3 c <span class="glyphicon glyphicon-chevron-right"></span></a>
+                      <div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">
+                        <a href="#" class="list-group-item">Sub sub item 1</a>
+                        <a href="#" class="list-group-item">Sub sub item 2</a>
+                      </div>
+                      <a href="#" class="list-group-item">Subitem 4 d</a>
                     </div>
-                    <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 4 d</a>
+                    <a href="javascript:;" class="list-group-item">Subitem 2</a>
+                    <a href="javascript:;" class="list-group-item">Subitem 3</a>
                   </div>
-                  <a href="javascript:;" class="list-group-item">Subitem 2</a>
-                  <a href="javascript:;" class="list-group-item">Subitem 3</a>
-                </div>
-              </li>
-              <li>
-                <a href="#demo4" class="list-group-item " data-toggle="collapse" data-parent="#sidebarmenu">Item 4  <span class="glyphicon glyphicon-chevron-right"></span></a>
-                  <li class="collapse" id="demo4">
-                    <a href="" class="list-group-item">Subitem 1</a>
-                    <a href="" class="list-group-item">Subitem 2</a>
-                    <a href="" class="list-group-item">Subitem 3</a>
-                  </li>
-              </li>
-            </ul>
-        </div>
+                </li>
+                <li>
+                  <a href="#demo4" class="list-group-item " data-toggle="collapse">Item 4  <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <li class="collapse" id="demo4">
+                      <a href="" class="list-group-item">Subitem 1</a>
+                      <a href="" class="list-group-item">Subitem 2</a>
+                      <a href="" class="list-group-item">Subitem 3</a>
+                    </li>
+                </li>
+              </ul>
+          </div>
+          <div class="col-xs-12 col-sm-9 content">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar"><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a> Panel Title</h3>
+              </div>
+              <div class="panel-body">
+                <div class="content-row">
+                  <h2 class="content-row-title">Getting Started</h2>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="docs-article docs--start" id="Install">
+                        <h3>Install</h3>
+                        <ul class="item__infos">
+                            <li>Clone the repo: <code>git clone https://github.com/silverbux/bootflat-admin.git</code></li>
+                            <li>Go inside the folder and Install Requirements: <code>npm install</code></li>
+                            <li>Run Grunt Watch: <code>grunt watch</code></li>
+                        </ul>
+                      </div>
+                      <div class="docs-article docs--start" id="Install">
+                        <h3>Customize / Modify / Workflow</h3>
+                        <div class="alert alert-success col-md-10">
+                          <code>grunt watch</code> will monitor any changes to sass, css and js files and automatically combine, minify and clean all files to
+                          <b>dist/css/site.min.css</b> and <b>dist/js/site.min.js</b>
+                          <br class="clearfix"><br>
+                        </div>
+                        <div class="clearfix"></div>
+                        <h4>CSS and JS Settings</h4>
+                        <p>Add or Remove css/js sources or packages from <b>bootflat-admin/csscomb.json</b> and <b>bootflat-admin/jscomb.json</b></p>
+                        <h4>CSS FILES</h4>
+                        <p>Add your own css rules under <b>bootflat-admin/css/site.css</b></p>
+                        <h4>SASS FILES</h4>
+                        <p>You can also modify SASS files under folder <b>bootflat-admin/scss folder.</b></p>
 
-        <div class="col-md-10 main-content">
-          <div class="content-row">
-            <h2 class="content-row-title">Getting Started</h2>
-            <div class="row">
-              <div class="col-md-12">
-                <div class="docs-article docs--start" id="Install">
-                  <h3>Install</h3>
-                  <ul class="item__infos">
-                      <li>Clone the repo: <code>git clone https://github.com/silverbux/bootflat-admin.git</code></li>
-                      <li>Go inside the folder and Install Requirements: <code>npm install</code></li>
-                      <li>Run Grunt Watch: <code>grunt watch</code></li>
-                  </ul>
-                </div>
-                <div class="docs-article docs--start" id="Install">
-                  <h3>Customize / Modify / Workflow</h3>
-                  <div class="alert alert-success col-md-10">
-                    <code>grunt watch</code> will monitor any changes to sass, css and js files and automatically combine, minify and clean all files to
-                    <b>dist/css/site.min.css</b> and <b>dist/js/site.min.js</b>
-                    <br class="clearfix">
-                  </div>
-                  <div class="clearfix"></div>
-                  <h4>CSS and JS Settings</h4>
-                  <p>Add or Remove css/js sources or packages from <b>bootflat-admin/csscomb.json</b> and <b>bootflat-admin/jscomb.json</b></p>
-                  <h4>CSS FILES</h4>
-                  <p>Add your own css rules under <b>bootflat-admin/css/site.css</b></p>
-                  <h4>SASS FILES</h4>
-                  <p>You can also modify SASS files under folder <b>bootflat-admin/scss folder.</b></p>
-
-                  <h4>JS FILES</h4>
-                  <p>Add your javascript codes to <b>bootflat-admin/js/application.js.</b></p>
-                </div>
-                <!-- What's included
-                ================================================== -->
-                <div class="docs-article docs--start" id="included">
-                  <h3>Folder Structure</h3>
+                        <h4>JS FILES</h4>
+                        <p>Add your javascript codes to <b>bootflat-admin/js/application.js.</b></p>
+                      </div>
+                      <!-- What's included
+                      ================================================== -->
+                      <div class="docs-article docs--start" id="included">
+                        <h3>Folder Structure</h3>
 <pre><code class="bash">
 Root Folder
 ├──bootflat-admin
@@ -200,9 +201,11 @@ Root Folder
               </div>
 
 
-      </div>
-          </div>
-
+                </div>
+               </div>
+              </div><!-- panel body -->
+            </div>
+        </div><!-- content -->
       </div>
     </div>
     <!--footer-->
